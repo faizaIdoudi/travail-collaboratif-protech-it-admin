@@ -1,0 +1,147 @@
+{
+  "posts": [
+    {
+      "nom": "Aidoudi",
+      "prenom": "Faiza",
+      "address": "Hkaima Mahdia ",
+      "tel": "20195848",
+      "email": "faiza.idoudi@gmail.com",
+      "password": "hhtuzej",
+      "id": 1
+    },
+    {
+      "nom": "Ajimi",
+      "prenom": "Nour",
+      "address": "zrig gabes",
+      "tel": "20187564",
+      "email": "ajiminour@gmail.com",
+      "password": "nour1/78",
+      "id": 2
+    },
+    {
+      "nom": "Ben Salem",
+      "prenom": "Ali",
+      "address": "Bizerte",
+      "tel": "25847961",
+      "email": "bensalemali@gmail.com",
+      "password": "salem1234",
+      "id": 3
+    },
+    {
+      "nom": "Hmmida",
+      "prenom": "Mouna",
+      "address": "Sousse",
+      "tel": "52879654",
+      "email": "hmmidamouna@gmail.com",
+      "password": "gh1234",
+      "id": 4
+    }
+  ],
+  "chefs": [
+    {
+      "id": 1,
+      "nom": "Skhiri",
+      "prenom": "Ahmed",
+      "address": "Sfax",
+      "tel": "20201584",
+      "email": "ahmedskhiri@gmail.com",
+      "password": "",
+      "specialite": "Développement Pédagogique"
+    },
+    {
+      "nom": "Ben Ali",
+      "prenom": "Asma",
+      "address": "Gafsa",
+      "tel": "52487159",
+      "email": "asmabenali@gmail.com",
+      "password": "fgte",
+      "specialite": "Stratégie Marketing ",
+      "id": 2
+    },
+    {
+      "nom": "Chledi",
+      "prenom": "Siwar",
+      "address": "Sousse",
+      "tel": "28945668",
+      "email": "siwarchledi@gmail.com",
+      "password": "feh2020",
+      "specialite": "Innovation Technologique",
+      "id": 3
+    }
+  ],
+  "taches": [
+    {
+      "libelle": " Élaboration d'un plan de développement informatique",
+      "description": " Créer un plan stratégique pour le développement informatique de Protech-IT, en identifiant les technologies clés, les objectifs de croissance et les étapes de mise en œuvre.",
+      "id": 4
+    },
+    {
+      "libelle": "Campagne de marketing innovante",
+      "description": " Concevoir et exécuter une campagne marketing novatrice visant à promouvoir les programmes de formation et de développement informatique de Protech-IT, mettant en avant nos normes élevées de qualité et d'innovation.",
+      "id": 5
+    },
+    {
+      "libelle": "Création d'un programme de formation personnalisé",
+      "description": "Développer un programme de formation sur mesure pour répondre aux besoins spécifiques des entreprises clientes, en mettant l'accent sur les domaines informatiques et industriels.",
+      "id": 6
+    },
+    {
+      "libelle": "Surveillance de la qualité de l'éducation",
+      "description": " Mettre en place un système de suivi et d'évaluation continu pour garantir que les normes élevées de qualité sont maintenues dans tous les aspects de l'éducation et de la formation offertes par Protech-IT.",
+      "id": 7
+    },
+    {
+      "libelle": "Création d'une stratégie de croissance",
+      "description": " Développer une stratégie de croissance à long terme pour Protech-IT, en explorant de nouveaux marchés, en diversifiant les offres de formation et en renforçant notre présence sur le marché.",
+      "id": 8
+    }
+  ],
+  "activite": [
+    {
+      "titre": "Planification de la Formation Technique",
+      "description": "Élaboration de plans de formation technique innovants pour les employés et les clients, en alignant les objectifs pédagogiques avec les normes élevées de qualité de Protech-IT.",
+      "id": 2
+    },
+    {
+      "titre": " Gestion de Projet de Transformation Numérique",
+      "description": "Pilotage de projets de transformation numérique pour les entreprises clientes, en utilisant des méthodologies novatrices et en assurant une adoption réussie des nouvelles technologies.",
+      "id": 3
+    },
+    {
+      "titre": "Suivi de la Qualité des Programmes",
+      "description": "Surveillance continue de la qualité des programmes de formation et de développement, en veillant à ce qu'ils répondent aux normes d'innovation et de pertinence de Protech-IT.",
+      "id": 4
+    },
+    {
+      "titre": "Stratégie de Marketing Digital",
+      "description": " Élaboration de stratégies de marketing numérique pour promouvoir les offres de formation et de développement, en mettant en avant les approches novatrices de Protech-IT.",
+      "id": 5
+    },
+    {
+      "titre": "Coordination des Ressources",
+      "description": "Gestion efficace des ressources humaines et technologiques pour assurer la mise en œuvre réussie des projets, en ligne avec les normes de qualité de Protech-IT.",
+      "id": 6
+    },
+    {
+      "titre": "Évaluation de la Performance des Équipes",
+      "description": "Évaluation continue des performances des équipes de projet, en favorisant une culture d'innovation et d'excellence au sein de Protech-IT.",
+      "id": 7
+    },
+    {
+      "titre": "Analyse des Besoins Clients",
+      "description": "Collaboration avec les clients pour comprendre leurs besoins en matière de formation et de développement, en adaptant les solutions proposées pour répondre à leurs attentes.",
+      "id": 8
+    }
+  ],
+  "signup": [
+    {
+      "nom": "Idoudi",
+      "prenom": "Faiza",
+      "adresse": "Mahdia",
+      "tel": 20195848,
+      "email": "faiza.idoudi@gmail.com",
+      "password": "20195848",
+      "id": 1
+    }
+  ]
+}

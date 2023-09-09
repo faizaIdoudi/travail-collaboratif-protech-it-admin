@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Se connecter</h1>
+          <h5>S'il vous plaît entrez votre adresse e-mail & votre mot de passe</h5>
+        </div>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Adresse E-mail</label>
+            <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
+            <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Connexion</button>
+        </form>
+        <a style="color:#fff ; margin: top 10px;" routerLink="/signup">Nouvel utilisateur ? Cliquez pour vous inscrire !!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--div class="auth-page">
+  <div class="auth-form">
+    <h2>{{ isSignUp ? 'Créez votre compte' : 'Bienvenue' }}</h2>
+    <label *ngIf="isSignUp">
+      <span>Nom</span>
+      <input type="text" [(ngModel)]="nom" name="nom" />
+    </label>
+    <label *ngIf="isSignUp">
+      <span>Adresse</span>
+      <input type="text" [(ngModel)]="adresse" name="adresse" />
+    </label>
+    <label *ngIf="isSignUp">
+      <span>Tel</span>
+      <input type="tel" [(ngModel)]="tel" name="tel" />
+    </label>
+    <label>
+      <span>Email</span>
+      <input type="email" [(ngModel)]="email" name="email" />
+    </label>
+    <label>
+      <span>Mot de passe</span>
+      <input type="password" [(ngModel)]="password" name="password" />
+    </label>
+    <button class="submit" (click)="onSubmit()">{{ isSignUp ? 'Envoyer' : 'Se connecter' }}</button>
+    <p class="toggle-text">
+      {{ isSignUp ? 'Vous avez déjà un compte?' : "Vous n'avez pas de compte?" }}
+      <a (click)="toggleSignUp()">{{ isSignUp ? 'Se connecter' : 'S\'inscrire' }}</a>
+    </p>
+  </div>
+</div-->

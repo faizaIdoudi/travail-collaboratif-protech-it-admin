@@ -1,0 +1,40 @@
+mat-nav-list h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark);
+  font-style: italic;
+  color: rgb(66, 52, 190);
+}
+.mat-icon {
+  align-items: center;
+  margin-right: 1rem;
+}
+.custom-list-item {
+  display: flex;
+  font-size: 1rem;
+  height: 70px;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  margin: 0 8px;
+  align-items: center;
+  color: var(--dark);
+  text-decoration: none;
+  &:hover {
+    background-color: #f0f0f0;
+    color: #3498db;
+  }
+}
+.list-item-active {
+  color: var(--dark);
+  ::ng-deep {
+    .custom-list-item content {
+      background-color: #e0e0e0;
+      &:hover {
+        background-color:#e0e0e0;
+      }
+    }
+
+  }
+}
+

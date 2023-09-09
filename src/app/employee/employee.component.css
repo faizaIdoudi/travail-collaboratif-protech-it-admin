@@ -1,0 +1,48 @@
+.main-body{
+  padding-top: 20px;
+  max-width: 1248px;
+  margin: 0 auto;
+}
+.main-body mat-form-field {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+
+}
+@media (max-width: 1200px) {
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar h1 {
+    font-size: 24px;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+
+  .mat-form-field {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .table {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 5px;
+  }
+
+  th {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

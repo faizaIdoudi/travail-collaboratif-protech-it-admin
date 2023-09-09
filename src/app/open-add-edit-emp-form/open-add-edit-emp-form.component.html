@@ -1,0 +1,47 @@
+<div class="mat-dialog-title">
+  <h1>Formulaire de l'employé</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="postEmployee()">
+  <div class="mat-dialog-content" class="content">
+    <div class="row">
+      <div class="col">
+        <mat-form-field>
+        <mat-label>Nom</mat-label>
+        <input matInput type="text" placeholder="Entrez votre nom" formControlName="nom">
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field>
+          <mat-label>Prénom</mat-label>
+          <input matInput placeholder="Entrez votre Prénom" formControlName="prenom">
+        </mat-form-field>
+      </div>
+
+    </div>
+    <div class="row">
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <input matInput type="text" placeholder="Entrez votre address" formControlName="address">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>numéro de Télephone</mat-label>
+        <input matInput placeholder="Entrez votre numéro de télephone" formControlName="tel">
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field>
+        <mat-label>Address Email</mat-label>
+        <input matInput type="email" placeholder="Entrez votre email" formControlName="email">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Mot de passe</mat-label>
+        <input matInput type="password" placeholder="Entrez votre mot de passe" formControlName="password">
+      </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-actions class="action">
+    <button id="cancel" type="button" (click)="onCancel()" mat-raised-button>Annuler</button>
+    <button mat-raised-button color="primary" type="submit">{{ data ? 'Mettre à jour' : 'Enregistrer'}}</button>
+  </div>
+
+</form>
