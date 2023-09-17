@@ -1,19 +1,21 @@
 import { Injectable } from '@angular/core';
-import {  Firestore, collection, query, collectionData } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
-import { Employee } from '../classes/employee';
-
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
-  constructor(private firestore: Firestore,) { }
-
- getAllUsers$(): Observable<Employee[]> {
-    const ref = collection(this.firestore, 'users');
-    const queryAll =query(ref);
-    return collectionData(queryAll) as Observable<Employee[]>;
+  constructor(private db: AngularFireDatabase) { }
+  getMessages() {
+    return this.db.list('messages').valueChanges();
   }
+  sendMessage(message: string) {
+    this.db.list('messages').push({
+      text: message,
+      timestamp: Date.now()
+    });
+  }
+
+
 }

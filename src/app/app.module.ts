@@ -50,6 +50,10 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { NgChartsModule } from 'ng2-charts';
 import { RendementParMoisComponent } from './rendement-par-mois/rendement-par-mois.component';
 import { ChartModule } from 'angular-highcharts';
+import { CategoriesComponent } from './categories/categories.component';
+import { MiseAJourComponent } from './mise-ajour/mise-ajour.component';
+import { TopThreeProjectsComponent } from './top-three-projects/top-three-projects.component';
+
 
 
 
@@ -74,7 +78,10 @@ import { ChartModule } from 'angular-highcharts';
     AddTacheComponent,
     AddActiviteComponent,
     InscriptionComponent,
-    RendementParMoisComponent
+    RendementParMoisComponent,
+    CategoriesComponent,
+    MiseAJourComponent,
+    TopThreeProjectsComponent
   ],
   imports: [
     BrowserModule,

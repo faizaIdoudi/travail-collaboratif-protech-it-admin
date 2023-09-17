@@ -1,15 +1,26 @@
-import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
 import { UserService } from '../shared/user.service';
+
 
 @Component({
   selector: 'app-chat',
   templateUrl: './chat.component.html',
   styleUrls: ['./chat.component.css']
 })
-export class ChatComponent {
-  searchControl = new FormControl();
-  users$ = this.userService.getAllUsers$();
-  constructor(private userService: UserService){}
+export class ChatComponent implements OnInit{
+  messages: string[] = [];
+  newMessage: string = '';
+
+  constructor(private chatService: UserService) {}
+
+  ngOnInit() {
+    this.chatService.getMessages().subscribe((messages: any) => {
+      this.messages = messages;
+    });
+  }
+  sendMessage() {
+    this.chatService.sendMessage(this.newMessage);
+    this.newMessage = '';
+  }
 
 }
